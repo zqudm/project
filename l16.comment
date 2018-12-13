@@ -1,0 +1,11 @@
+<p>Turns a string value into a java.lang.Number.</p>
+
+<p>First, the value is examined for a type qualifier on the end
+(<code>'f','F','d','D','l','L'</code>).  If it is found, it starts 
+trying to create successively larger types from the type specified
+until one is found that can represent the value.</p>
+
+<p>If a type specifier is not found, it will check for a decimal point
+and then try successively larger types from <code>Integer</code> to
+<code>BigInteger</code> and from <code>Float</code> to
+<code>BigDecimal</code>.</p>
